@@ -37,7 +37,7 @@ android {
         versionCode Integer.parseInt(ANDROID_VERSION_CODE)
         versionName ANDROID_VERSION_NAME
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
-        consumerProguardFiles 'proguard-consumer.txt'
+        //consumerProguardFiles 'proguard-consumer.txt'
     }
 
     buildTypes {
@@ -47,8 +47,8 @@ android {
         release {
             // Obfuscation is enabled to cleanup classes declared public
             // but which are considered internal APIs
-            minifyEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+            minifyEnabled false
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
         }
     }
 }
